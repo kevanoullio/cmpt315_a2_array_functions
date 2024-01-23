@@ -5,6 +5,7 @@
  */
 function countNumberOfArrays(array) {
     let count = 0;
+    // Check if each element is an array.
     for (let i = 0; i < array.length; i++) {
         if (Array.isArray(array[i])) {
             count++;
