@@ -6,8 +6,13 @@
 function participants(array) {
     let names = [];
     for (let i = 0; i < array.length; i++) {
-        if (!names.includes(array[i].name)) {
-            names.push(array[i].name);
+        // Check if the winner is already in the names array.
+        if (!names.includes(array[i].winner)) {
+            names.push(array[i].winner);
+        }
+        // Check if the loser is already in the names array.
+        if (!names.includes(array[i].loser)) {
+            names.push(array[i].loser);
         }
     }
     return names;
