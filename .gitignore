@@ -1,0 +1,14 @@
+# Dependencies
+/node_modules
+
+# Testing
+/test
+
+# production
+/build
+/dist
+
+# Misc
+.env
+.cache
+.vscode
