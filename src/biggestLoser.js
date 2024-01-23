@@ -6,29 +6,42 @@
  * @returns {string} The loser name with the biggest tally of loser_points.
  */
 function biggestLoser(array) {
-    let losers = {};
+    let loser_count = {};
+
     for (let i = 0; i < array.length; i++) {
         let winner = array[i].winner;
         let loser = array[i].loser;
-        if (losers[winner] === undefined) {
-            losers[winner] = -array[i].loser_points;
+
+        // Check if the winner is already in the loser_count object.
+        if (loser_count[winner] === undefined) {
+            // Assign starting value. The winner gets negative loser_points.
+            loser_count[winner] = -array[i].loser_points;
         } else {
-            losers[winner] - array[i].loser_points;
+            // The winner gets negative loser_points.
+            loser_count[winner] - array[i].loser_points;
         }
-        if (losers[loser] === undefined) {
-            losers[loser] = array[i].loser_points;
+
+        // Check if the loser is already in the loser_count object.
+        if (loser_count[loser] === undefined) {
+            // Assign starting value. The loser gets positive loser_points.
+            loser_count[loser] = array[i].loser_points;
         } else {
-            losers[loser] + array[i].loser_points;
+            // The loser gets positive loser_points.
+            loser_count[loser] + array[i].loser_points;
         }
     }
+
     let biggestLoser = "";
     let biggestLoserPoints = 0;
-    for (let loser in losers) {
-        if (losers[loser] > biggestLoserPoints) {
+
+    // Find the biggest loser.
+    for (let loser in loser_count) {
+        if (loser_count[loser] > biggestLoserPoints) {
             biggestLoser = loser;
-            biggestLoserPoints = losers[loser];
+            biggestLoserPoints = loser_count[loser];
         }
     }
+
     return biggestLoser;
 }
 

@@ -16,9 +16,8 @@ function winnersObject(array) {
             participants[winner] = [];
             // Add the loser to the winner's list of beaten players.
             participants[winner].push(loser);
-        }
-        else {
-            // If the winner is already in the participants object, add the loser to the winner's list of beaten players.
+        } else if (!participants[winner].includes(loser)) {
+            // If the winner is already in the participants object, but the loser is not listed, add the loser to the winner's list of beaten players.
             participants[winner].push(loser);
         }
         // Check if the loser is already in the participants object.
