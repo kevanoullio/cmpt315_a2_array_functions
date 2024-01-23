@@ -1,0 +1,27 @@
+{
+  "name": "cmpt315_a2_array_functions",
+  "version": "1.0.0",
+  "description": "This is a library of array functions for CMPT 315 Assignment 2. It's taylored to the \"winner/loser/loser_points\" data structure of the assignment.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevanoullio/cmpt315_a2_array_functions.git"
+  },
+  "keywords": [
+    "cmpt315",
+    "array",
+    "function"
+  ],
+  "author": "Kevin Ulliac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevanoullio/cmpt315_a2_array_functions/issues"
+  },
+  "homepage": "https://github.com/kevanoullio/cmpt315_a2_array_functions#readme"
+}
