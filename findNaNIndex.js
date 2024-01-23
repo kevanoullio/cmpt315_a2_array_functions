@@ -1,5 +1,16 @@
-const _ = require('project-name');
-// Test Data :
-const results1 = _.findNaNIndex([2, NaN, 8, 16, 32]) // => [1]
-const results1 = _.findNaNIndex([2, 4, NaN, 16, 32, NaN]) // => [2,5]
-const results1 = _.findNaNIndex([2, 4, 16, 32]) // => []
+/**
+ * Finds all the indexes where NaN is found in a given array of numbers and NaN.
+ * @param {Array} array An array of numbers and/or NaN values.
+ * @returns {Array} An array of indexes where NaN is found.
+ */
+function findNaNIndex(array) {
+    let indexes = [];
+    for (let i = 0; i < array.length; i++) {
+        if (isNaN(array[i])) {
+            indexes.push(i);
+        }
+    }
+    return indexes;
+}
+
+module.exports = findNaNIndex;
