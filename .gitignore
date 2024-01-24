@@ -1,8 +1,5 @@
 # Dependencies
-/node_modules
-
-# Testing
-/test
+*/node_modules
 
 # production
 /build
