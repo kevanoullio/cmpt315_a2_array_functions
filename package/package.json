@@ -1,6 +1,6 @@
 {
   "name": "@kevanoullio/cmpt315_a2_array_functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a library of array functions for CMPT 315 Assignment 2. It's taylored to the \"winner/loser/loser_points\" data structure of the assignment.",
   "main": "src/index.js",
   "directories": {
