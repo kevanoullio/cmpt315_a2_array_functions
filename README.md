@@ -4,11 +4,13 @@ This is a library of array functions for CMPT 315 Assignment 2. It's taylored to
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for production use. The code is not guaranteed to be stable.
 ## Usage
 **Install it:**
-`npm install kevanoullio-cmpt315_a2_array_functions`
+`npm install @kevanoullio/cmpt315_a2_array_functions`
 **Require it:**
-`const _ = require('kevanoullio-cmpt315_a2_array_functions');`
+`const _ = require("@kevanoullio/cmpt315_a2_array_functions");`
 **Call it:**
-`const results = _.findNaNIndex(array)`
+`const array = [1, 2, NaN, 3];`
+`const results = _.findNaNIndex(array);`
+etc.
 ## Documentation
 The following functions are currently implemented:
 * `findNaNIndex(array)`: Finds all the indexes where NaN is found in a given array of numbers and NaN.

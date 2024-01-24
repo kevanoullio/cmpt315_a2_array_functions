@@ -1,11 +1,11 @@
 # Dependencies
-*/node_modules
+node_modules/
 
 # production
-/build
-/dist
+build/
+dist/
 
 # Misc
-.env
-.cache
-.vscode
+.vscode/
+*.env
+*.cache
